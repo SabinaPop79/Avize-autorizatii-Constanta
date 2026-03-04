@@ -827,29 +827,34 @@ const CAEN_DB = {
       },
       {
         id: 5,
-        titlu: "Autorizația Sanitar-Veterinară (DSVSA)",
-        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și Siguranța Alimentelor",
-        institutie_url: "https://dsvsa-constanta.ro",
-        cost: "200–500 RON (taxe de înregistrare/autorizare)",
-        durata: "30 zile calendaristice",
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
+        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "392 lei/unitate (înregistrare inițială) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D — în vigoare 14.05.2025; vizare anuală = 20% din tariful inițial ≈ 78 lei/an; autorizație valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice (inspecție la fața locului obligatorie)",
         obligatoriu: true,
         documente: [
-          "Cerere de înregistrare/autorizare sanitar-veterinară",
-          "Planul spațiului cu fluxul produselor alimentare",
-          "Lista produselor/preparatelor comercializate",
-          "Proceduri HACCP documentate",
-          "Contracte de aprovizionare cu furnizori autorizați",
-          "Dovada echipamentelor frigorifice și temperaturile de depozitare",
-          "Contracte de eliminare a deșeurilor alimentare",
-          "Registrul de intrare-ieșire a produselor de origine animală"
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat de înregistrare ONRC + Certificat constatator cu CAEN 5610 la punctul de lucru",
+          "Schița spațiului cu fluxuri tehnologice (bucătărie, depozit, sală de mese, grup sanitar)",
+          "Lista preparatelor și produselor comercializate (inclusiv produse de origine animală)",
+          "Proceduri HACCP documentate (Regulamentul CE 852/2004)",
+          "Contract de salubritate cu firmă autorizată",
+          "Contract de deratizare/dezinsecție/dezinfecție",
+          "Contract eliminare uleiuri uzate (dacă se prăjesc alimente)",
+          "Contract eliminare deșeuri de origine animală (Protan sau echivalent)",
+          "Dovada sursei de apă potabilă (racord rețea/buletin de analiză)",
+          "Chitanță/ordin de plată tarif DSVSA (392 lei — achitat înainte de depunere)"
         ],
         note: [
-          "Obligatorie pentru unitățile care manipulează produse de origine animală.",
-          "DSVSA efectuează inspecție și poate solicita probe de laborator.",
-          "Numărul de autorizare se menționează pe toate documentele comerciale.",
-          "Înregistrarea sanitară-veterinară este diferită de autorizare — în funcție de categoriile de produse."
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 392 lei/unitate pentru restaurante (CAEN 5610). Vizare anuală: 20% ≈ 78 lei/an.",
+          "Documentul emis poate fi Înregistrare sanitară-veterinară (unități mici, vânzare cu amănuntul) sau Autorizație sanitară-veterinară (unități mai mari cu prelucrare), după caz.",
+          "DSVSA efectuează inspecție obligatorie la fața locului — spațiul trebuie să fie amenajat și utilat complet la momentul controlului.",
+          "Personalul care manipulează alimente trebuie să dețină fișă medicală actualizată.",
+          "Implementarea sistemului HACCP este obligatorie conform Regulamentului CE 852/2004.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
         ],
-        lege: "Regulamentul CE nr. 853/2004; Regulamentul CE nr. 854/2004; Legea nr. 150/2004; Ordinul ANSVSA nr. 111/2008"
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 111/2008 (procedură înregistrare); Ordinul ANSVSA nr. 57/2010 (autorizare); Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025 (tarife); OG nr. 42/2004; Legea nr. 150/2004"
       },
       {
         id: 6,
@@ -1115,21 +1120,32 @@ const CAEN_DB = {
       },
       {
         id: 4,
-        titlu: "Înregistrare/Autorizare DSVSA",
-        institutie: "DSVSA Constanța",
-        institutie_url: "https://dsvsa-constanta.ro",
-        cost: "100–300 RON",
-        durata: "30 zile",
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
+        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "817 lei/unitate (supermarket/hipermarket) sau 326 lei/unitate (magazine alimentare mici, bacănii) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D; vizare anuală = 20% din tariful inițial; autorizație valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice",
         obligatoriu: true,
         documente: [
-          "Cerere înregistrare sanitară-veterinară",
-          "Lista produselor comercializate",
-          "Planul spațiului de depozitare frigorific",
-          "Proceduri HACCP",
-          "Contracte furnizori autorizați"
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat de înregistrare ONRC + Certificat constatator cu CAEN 4711 la punctul de lucru",
+          "Schița spațiului cu zone de depozitare, refrigerare, vânzare și grupuri sanitare",
+          "Lista produselor de origine animală comercializate (carne, mezeluri, lactate, ouă, pește etc.)",
+          "Proceduri HACCP documentate",
+          "Contract de salubritate",
+          "Contract de deratizare/dezinsecție/dezinfecție",
+          "Dovada echipamentelor frigorifice (vitrine, depozite reci) și temperaturilor de depozitare",
+          "Contract eliminare deșeuri de origine animală (Protan sau echivalent autorizat)",
+          "Dovada sursei de apă potabilă",
+          "Chitanță/ordin de plată tarif DSVSA"
         ],
-        note: ["Obligatorie pentru produse de origine animală (carne, lactate, ouă etc.)"],
-        lege: "Regulamentul CE 853/2004; Ordinul ANSVSA 111/2008"
+        note: [
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 817 lei/unitate pentru supermarketuri și hipermarketuri; 326 lei/unitate pentru magazine alimentare mici și bacănii (CAEN 4711). Vizare anuală: 20% ≈ 163 lei (supermarket) / 65 lei (mic magazin).",
+          "Obligatorie pentru orice spațiu de comercializare al produselor de origine animală (carne, mezeluri, lactate, ouă, pește, miere etc.).",
+          "DSVSA efectuează inspecție la fața locului — spațiul trebuie să fie dotat și funcțional la momentul controlului.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
+        ],
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Regulamentul CE nr. 854/2004; Ordinul ANSVSA nr. 111/2008; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025 (tarife); OG nr. 42/2004; Legea nr. 150/2004"
       },
       {
         id: 5,
@@ -1347,30 +1363,33 @@ const CAEN_DB = {
       },
       {
         id: 4,
-        titlu: "Autorizația Sanitar-Veterinară de Funcționare (DSVSA)",
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
         institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
-        institutie_url: "https://dsvsa-constanta.ro",
-        cost: "Taxă de autorizare: variabil — conform Ordinul ANSVSA nr. 96/2014 privind tarifele sanitare veterinare; vizare anuală = 20% din tariful inițial; autorizația sanitară veterinară are valabilitate NELIMITATĂ (pe toată durata funcționării conform condițiilor)",
-        durata: "15–30 zile calendaristice",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "392 lei/unitate (înregistrare inițială) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D; vizare anuală = 20% din tariful inițial ≈ 78 lei/an; autorizație valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice (inspecție la fața locului obligatorie)",
         obligatoriu: true,
         documente: [
-          "Cerere de autorizare sanitară veterinară (formular tip DSVSA)",
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat de înregistrare ONRC + Certificat constatator cu CAEN 5630 la punctul de lucru",
           "Schița/planul spațiului cu fluxul tehnologic (bar, depozit băuturi, grup sanitar)",
-          "Lista băuturilor/preparatelor servite (inclusiv cele cu conținut de lapte, ouă, produse animale)",
+          "Lista băuturilor și preparatelor servite (inclusiv cele cu lapte, frișcă, ouă, ingrediente animale)",
+          "Proceduri HACCP documentate",
           "Contract de salubritate cu firmă autorizată",
           "Contract de deratizare/dezinsecție/dezinfecție",
-          "Dovada sursei de apă potabilă (racord rețea sau buletin de analiză)",
-          "Dovada eliminării corecte a uleiurilor alimentare uzate (dacă se prepară alimente)",
-          "Certificat constatator ONRC cu CAEN 5630 autorizat la punctul de lucru"
+          "Contract eliminare deșeuri de origine animală (dacă se prepară alimente cu ingrediente animale)",
+          "Dovada sursei de apă potabilă",
+          "Chitanță/ordin de plată tarif DSVSA (392 lei — achitat înainte de depunere)"
         ],
         note: [
-          "⚠ OBLIGATORIE pentru baruri care servesc produse de origine animală: lapte, frișcă, ouă, preparate cu carne (cocktailuri cu smântână, sandvișuri, platouri etc.).",
-          "Chiar dacă barul servește exclusiv băuturi alcoolice/răcoritoare, DSVSA poate solicita autorizarea dacă există risc de contaminare încrucișată.",
-          "DSVSA Constanța efectuează inspecție la fața locului înainte de emiterea autorizației.",
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 392 lei/unitate pentru baruri și activități de servire a băuturilor (CAEN 5630). Vizare anuală: 20% ≈ 78 lei/an.",
+          "OBLIGATORIE pentru toate activitățile de alimentație publică — inclusiv baruri care servesc exclusiv băuturi, dacă există risc de contact cu alimente de origine animală (lapte pentru cafea, frișcă, cocktailuri cu ouă etc.).",
+          "Documentul emis poate fi Înregistrare sanitară-veterinară sau Autorizație sanitară-veterinară, în funcție de complexitatea activității.",
+          "DSVSA efectuează inspecție obligatorie la fața locului — unitatea trebuie să fie complet amenajată la momentul controlului.",
           "Autorizația DSVSA este condiție pentru obținerea autorizației de funcționare de la Primărie.",
-          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750"
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
         ],
-        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 57/2010 (autorizare sanitară veterinară); Ordinul ANSVSA nr. 111/2008 (înregistrare unități mici); Ordinul ANSVSA nr. 96/2014 (tarife); OG nr. 42/2004; Legea nr. 150/2004"
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 111/2008; Ordinul ANSVSA nr. 57/2010; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025 (tarife); OG nr. 42/2004; Legea nr. 150/2004"
       },
       {
         id: 5,
@@ -1725,29 +1744,32 @@ const CAEN_DB = {
       },
       {
         id: 11,
-        titlu: "Autorizația Sanitar-Veterinară de Funcționare (DSVSA)",
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
         institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
-        institutie_url: "https://dsvsa-constanta.ro",
-        cost: "Variabil — conform Ordinul ANSVSA nr. 96/2014 privind tarifele sanitare veterinare; vizare anuală = 20% din tariful inițial; autorizația sanitară veterinară are valabilitate NELIMITATĂ (pe toată durata funcționării conform condițiilor)",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "392 lei/unitate alimentație publică din hotel (restaurant/bar) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D; hoteluri fără restaurant cu doar minibar: 326 lei; vizare anuală = 20% din tariful inițial; valabilitate NELIMITATĂ",
         durata: "15–30 zile calendaristice",
         obligatoriu: true,
         documente: [
-          "Cerere de autorizare sanitară veterinară (formular tip DSVSA)",
-          "Schița/planul spațiilor de depozitare alimente, bucătărie (dacă există), minibar",
-          "Lista produselor alimentare servite în hotel (mic dejun, restaurant, room service, minibar)",
-          "Contract salubritate",
-          "Contract deratizare/dezinsecție/dezinfecție",
+          "Cerere tip autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat constatator ONRC cu CAEN 5510 autorizat la punctul de lucru",
+          "Schița/planul spațiilor de depozitare alimente, bucătărie, restaurant, bar și minibar",
+          "Lista produselor alimentare servite (mic dejun, restaurant, room service, minibar)",
+          "Proceduri HACCP documentate pentru toate spațiile de manipulare alimente",
+          "Contract de salubritate",
+          "Contract de deratizare/dezinsecție/dezinfecție",
+          "Contract eliminare deșeuri de origine animală",
           "Dovada sursei de apă potabilă",
-          "Certificat constatator ONRC cu CAEN 5510 autorizat"
+          "Chitanță/ordin de plată tarif DSVSA"
         ],
         note: [
-          "⚠ OBLIGATORIE pentru orice hotel care oferă mic dejun, restaurant, bar sau minibar cu produse de origine animală.",
-          "Chiar și hotelurile fără restaurant propriu, dacă servesc mic dejun cu lactate/ouă/mezeluri, necesită autorizație DSVSA.",
-          "DSVSA efectuează inspecție la fața locului înainte de emiterea autorizației.",
-          "Autorizația DSVSA este cerută pentru obținerea autorizației de funcționare și a clasificării MEAT.",
-          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750"
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 392 lei/unitate pentru restaurante/baruri din hotel (CAEN 5610/5630 în cadrul complexului); 326 lei pentru alte unități alimentare (catering, cofetărie din hotel). Vizare anuală: 20%.",
+          "⚠ OBLIGATORIE pentru orice hotel care oferă mic dejun, restaurant, bar, room service sau minibar cu produse de origine animală (lactate, ouă, mezeluri, preparate din carne).",
+          "Chiar și hotelurile fără restaurant propriu care servesc mic dejun cu lactate/ouă necesită această autorizație.",
+          "DSVSA efectuează inspecție obligatorie la fața locului înainte de emiterea autorizației.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
         ],
-        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 57/2010 (autorizare sanitară veterinară); Ordinul ANSVSA nr. 96/2014 (tarife); OG nr. 42/2004"
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 57/2010; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025 (tarife); OG nr. 42/2004; Legea nr. 150/2004"
       },
       {
         id: 12,
@@ -2541,6 +2563,193 @@ const CAEN_DB = {
         lege: "OUG nr. 195/2005; OM nr. 1798/2007; Codul Silvic"
       }
     ]
+  },
+
+  "5621": {
+    titlu: "Activități de alimentație (catering) pentru evenimente",
+    pasi: [
+      {
+        id: 1,
+        titlu: "Înregistrare ONRC",
+        institutie: "ONRC — Oficiul Național al Registrului Comerțului",
+        institutie_url: "https://www.onrc.ro",
+        cost: "200 lei (ghișeu) / 100 lei (online)",
+        durata: "3–5 zile lucrătoare",
+        obligatoriu: true,
+        documente: ["Cerere de înregistrare", "Act constitutiv", "Dovada sediu social", "Specimen de semnătură", "Dovada achitare taxe ONRC"],
+        note: ["CAEN Rev.3 obligatoriu de la 25.09.2026 (HG 284/2025). Verificați că CAEN 5621 este autorizat la punctul de lucru."],
+        lege: "Legea nr. 31/1990; Legea nr. 265/2022; HG nr. 284/2025 (CAEN Rev.3)"
+      },
+      {
+        id: 2,
+        titlu: "Autorizația de Securitate la Incendiu (ISU)",
+        institutie: "ISU Dobrogea — Inspectoratul pentru Situații de Urgență Constanța",
+        institutie_url: "https://isuct.igsu.ro",
+        cost: "Gratuit",
+        durata: "30 zile calendaristice",
+        obligatoriu: true,
+        documente: ["Cerere tip (OMAI 180/2022)", "Documentație tehnică", "Planuri arhitecturale", "Scenariu de securitate la incendiu"],
+        note: ["ISU Constanța: Str. Mihai Viteazu nr. 32 | Tel: 0241.665.500 | isuct.igsu.ro"],
+        lege: "Legea nr. 307/2006; OMAI nr. 180/2022"
+      },
+      {
+        id: 3,
+        titlu: "Avizul/Autorizația Sanitară (DSP)",
+        institutie: "DSP Constanța — Direcția de Sănătate Publică",
+        institutie_url: "https://dspct.ro",
+        cost: "400–500 lei — OMS nr. 1030/2009 mod. OMS nr. 458/2023; viză anuală: 400 lei",
+        durata: "15–30 zile calendaristice",
+        obligatoriu: true,
+        documente: ["Cerere aviz sanitar", "Schița spațiilor cu circuit funcțional", "Memoriu tehnico-sanitar", "Contract salubritate", "Contract deratizare"],
+        note: ["DSP Constanța: Aleea Lăcrămioarei nr. 1 | secretariat@dspct.ro | Tel: +40 (241) 83 83 30"],
+        lege: "Legea nr. 95/2006; OMS nr. 1030/2009; OMS nr. 458/2023"
+      },
+      {
+        id: 4,
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
+        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "326 lei/unitate (catering și servicii de alimentație pentru evenimente) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D; vizare anuală = 20% ≈ 65 lei/an; valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice",
+        obligatoriu: true,
+        documente: [
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat constatator ONRC cu CAEN 5621 autorizat la punctul de lucru",
+          "Schița/planul bucătăriei centrale cu fluxuri tehnologice",
+          "Proceduri HACCP documentate",
+          "Contract salubritate",
+          "Contract deratizare/dezinsecție/dezinfecție",
+          "Contract eliminare deșeuri de origine animală (Protan sau echivalent autorizat)",
+          "Dovada echipamentelor frigorifice și de transport termoizolat",
+          "Lista preparatelor/meniurilor livrate cu ingrediente de origine animală",
+          "Chitanță/ordin de plată tarif DSVSA (326 lei)"
+        ],
+        note: [
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 326 lei/unitate pentru catering și servicii alimentare. Vizare anuală: 20% ≈ 65 lei/an.",
+          "Cateringul pentru colectivități (spitale, școli, cantine) poate necesita Autorizație sanitară-veterinară completă — verificați cu DSVSA Constanța.",
+          "Mijloacele de transport alimente necesită autorizare separată pentru transport produse alimentare.",
+          "Implementarea HACCP documentată complet — obligatorie la inspecție DSVSA.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
+        ],
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 111/2008; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025; OG nr. 42/2004"
+      },
+      {
+        id: 5,
+        titlu: "Autorizația / Avizul Program de Funcționare — Primăria Constanța",
+        institutie: "Primăria Municipiului Constanța — Direcția Autorizare și Sprijin Operatori Economici",
+        institutie_url: "https://www.primaria-constanta.ro",
+        cost: "159 RON/an — HCL nr. 462/23.12.2025, Anexa 8, Art. 1",
+        durata: "15–30 zile",
+        obligatoriu: true,
+        documente: ["Cerere tip", "Certificat ONRC", "Avizele obținute anterior (ISU, DSP, DSVSA)", "Contract închiriere/proprietate", "Dovada plății taxei"],
+        note: ["Cateringul funcționează preponderent din bucătărie centrală — verificați necesitatea avizului la DASOEC Constanța."],
+        lege: "HCL nr. 462/23.12.2025, Anexa nr. 8, Art. 1; OG nr. 99/2000"
+      },
+      {
+        id: 6,
+        titlu: "Înregistrare Casa de Marcat (ANAF)",
+        institutie: "ANAF — Administrația Financiară Constanța",
+        institutie_url: "https://www.anaf.ro",
+        cost: "Cost echipament: 1.500–4.000 RON",
+        durata: "5–10 zile lucrătoare",
+        obligatoriu: true,
+        documente: ["Cerere înregistrare aparat marcat", "Cartea de intervenție", "Procesul-verbal de sigilare", "CIF", "Dovada adresei"],
+        note: ["Casă de marcat electronică fiscală obligatorie. ⚠ OUG 68/2025: cod QR pe bon suspendat până 01.11.2026."],
+        lege: "OUG nr. 28/1999; OUG nr. 68/2025"
+      }
+    ]
+  },
+
+  "5629": {
+    titlu: "Alte servicii de alimentație n.c.a. (cantine, bufete, alimentație colectivă)",
+    pasi: [
+      {
+        id: 1,
+        titlu: "Înregistrare ONRC",
+        institutie: "ONRC — Oficiul Național al Registrului Comerțului",
+        institutie_url: "https://www.onrc.ro",
+        cost: "200 lei (ghișeu) / 100 lei (online)",
+        durata: "3–5 zile lucrătoare",
+        obligatoriu: true,
+        documente: ["Cerere de înregistrare", "Act constitutiv", "Dovada sediu social", "Specimen de semnătură", "Dovada achitare taxe"],
+        note: ["Include cantine, bufete, unități de alimentație colectivă (fabrici, birouri, școli, spitale)."],
+        lege: "Legea nr. 31/1990; Legea nr. 265/2022; HG nr. 284/2025 (CAEN Rev.3)"
+      },
+      {
+        id: 2,
+        titlu: "Autorizația de Securitate la Incendiu (ISU)",
+        institutie: "ISU Dobrogea — Inspectoratul pentru Situații de Urgență Constanța",
+        institutie_url: "https://isuct.igsu.ro",
+        cost: "Gratuit",
+        durata: "30 zile",
+        obligatoriu: true,
+        documente: ["Cerere tip ISU", "Documentație tehnică incendiu", "Planuri arhitecturale", "Scenariu de securitate"],
+        note: ["ISU Constanța: Str. Mihai Viteazu nr. 32 | Tel: 0241.665.500"],
+        lege: "Legea nr. 307/2006; OMAI nr. 180/2022"
+      },
+      {
+        id: 3,
+        titlu: "Avizul/Autorizația Sanitară (DSP)",
+        institutie: "DSP Constanța",
+        institutie_url: "https://dspct.ro",
+        cost: "400–500 lei — OMS nr. 458/2023; viză anuală: 400 lei",
+        durata: "15–30 zile",
+        obligatoriu: true,
+        documente: ["Cerere aviz sanitar", "Schița spațiilor", "Memoriu tehnico-sanitar", "Contract salubritate", "Contract deratizare"],
+        note: ["DSP Constanța: Aleea Lăcrămioarei nr. 1 | secretariat@dspct.ro | Tel: +40 (241) 83 83 30"],
+        lege: "OMS nr. 1030/2009; OMS nr. 458/2023; Legea nr. 95/2006"
+      },
+      {
+        id: 4,
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
+        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "326 lei/unitate (cantine, bufete, alimentație colectivă) — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D; vizare anuală = 20% ≈ 65 lei/an; valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice",
+        obligatoriu: true,
+        documente: [
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat constatator ONRC cu CAEN 5629 autorizat la punctul de lucru",
+          "Schița/planul bucătăriei și spațiilor de servire cu fluxuri tehnologice",
+          "Proceduri HACCP documentate",
+          "Contract salubritate",
+          "Contract deratizare/dezinsecție/dezinfecție",
+          "Contract eliminare deșeuri de origine animală",
+          "Dovada surselor de aprovizionare cu produse alimentare de origine animală",
+          "Chitanță/ordin de plată tarif DSVSA (326 lei)"
+        ],
+        note: [
+          "⚠ TARIF 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 326 lei/unitate pentru cantine, bufete și alimentație colectivă. Vizare anuală: 20% ≈ 65 lei/an.",
+          "Obligatorie pentru orice unitate care prepară și servește alimente — cantine de fabrică, bufete școlare, unități de alimentație colectivă.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
+        ],
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 111/2008; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025; OG nr. 42/2004"
+      },
+      {
+        id: 5,
+        titlu: "Autorizația / Avizul Program de Funcționare — Primăria Constanța",
+        institutie: "Primăria Municipiului Constanța — DASOEC",
+        institutie_url: "https://www.primaria-constanta.ro",
+        cost: "159 RON/an — HCL nr. 462/23.12.2025, Anexa 8",
+        durata: "15–30 zile",
+        obligatoriu: true,
+        documente: ["Cerere tip", "Certificat ONRC", "Avizele obținute anterior", "Contract proprietate/chirie", "Dovada plății"],
+        note: ["Cantinele și bufetele din instituții pot necesita aviz de funcționare separat."],
+        lege: "HCL nr. 462/23.12.2025, Anexa 8; OG nr. 99/2000"
+      },
+      {
+        id: 6,
+        titlu: "Înregistrare Casa de Marcat (ANAF)",
+        institutie: "ANAF — Administrația Financiară Constanța",
+        institutie_url: "https://www.anaf.ro",
+        cost: "Cost echipament: 1.500–4.000 RON",
+        durata: "5–10 zile",
+        obligatoriu: true,
+        documente: ["Cerere înregistrare aparat marcat", "Cartea de intervenție", "Procesul-verbal de sigilare", "CIF", "Dovada adresei"],
+        note: ["Casă de marcat electronică fiscală obligatorie. ⚠ OUG 68/2025: cod QR pe bon suspendat până 01.11.2026."],
+        lege: "OUG nr. 28/1999; OUG nr. 68/2025"
+      }
+    ]
   }
 };
 
@@ -3150,6 +3359,10 @@ const CAEN_LIST = [
 
 // Generic fallback for codes not in CAEN_DB
 function getGenericSteps(cod, name) {
+  // Coduri alimentatie publica si comert alimentar — necesita DSVSA obligatoriu
+  const coduriFoodAlim = ['5610','5621','5629','5630','4711','4721','4722','4723','4724','4725','4729','4731','4781','4789'];
+  const isFoodCaen = coduriFoodAlim.includes(cod);
+
   // Coduri agricole/silvice (01xx, 02xx) — NU necesita ISU sau autorizatie Primarie pentru activitatea in camp
   const codNum = parseInt(cod, 10);
   const isAgricol = (codNum >= 100 && codNum <= 299); // 01xx = agricultura, 02xx = silvicultura
@@ -3295,8 +3508,37 @@ function getGenericSteps(cod, name) {
         ],
         lege: "HCL nr. 462/23.12.2025, Anexa nr. 8; OG nr. 99/2000 privind comercializarea produselor și serviciilor de piață"
       },
-      {
+      ...(isFoodCaen ? [{
         id: 4,
+        titlu: "Înregistrarea / Autorizarea Sanitar-Veterinară (DSVSA)",
+        institutie: "DSVSA Constanța — Direcția Sanitar-Veterinară și pentru Siguranța Alimentelor",
+        institutie_url: "https://constanta.dsvsa.ro",
+        cost: "326–817 lei/unitate — Ord. ANSVSA nr. 652/09.04.2025 (MO 444/14.05.2025), Anexa 3 lit. D: 392 lei restaurante/baruri (5610/5630), 326 lei cofetării/patiserii/cantine/catering (5621/5629), 817 lei supermarketuri (4711 mari), 326 lei magazine alimentare mici; vizare anuală = 20% din tariful inițial; valabilitate NELIMITATĂ",
+        durata: "15–30 zile calendaristice (inspecție la fața locului obligatorie)",
+        obligatoriu: true,
+        documente: [
+          "Cerere tip înregistrare/autorizare sanitară-veterinară (formular ANSVSA/DSVSA)",
+          "Certificat constatator ONRC cu codul CAEN autorizat la punctul de lucru",
+          "Schița/planul spațiului cu fluxuri tehnologice (zone de preparare, depozitare, servire, grupuri sanitare)",
+          "Lista produselor/preparatelor comercializate cu ingrediente de origine animală",
+          "Proceduri HACCP documentate (Regulamentul CE 852/2004)",
+          "Contract de salubritate cu firmă autorizată",
+          "Contract de deratizare/dezinsecție/dezinfecție",
+          "Contract eliminare deșeuri de origine animală",
+          "Dovada sursei de apă potabilă",
+          "Chitanță/ordin de plată tarif DSVSA (plătit înainte de depunere)"
+        ],
+        note: [
+          `⚠ OBLIGATORIE: Codul CAEN ${cod} (${name}) intră în categoria unităților de alimentație publică/comerț alimentar care necesită înregistrare sau autorizare sanitară-veterinară obligatorie.`,
+          "⚠ TARIFE 2026 (Ord. ANSVSA 652/2025, Anexa 3D): 392 lei — restaurante (5610) și baruri (5630); 326 lei — cofetării, patiserii, cantine, catering (5621/5629) și magazine alimentare mici; 817 lei — supermarketuri/hipermarketuri mari.",
+          "Vizare anuală: 20% din tariful inițial. Autorizația are valabilitate NELIMITATĂ dacă condițiile sunt respectate.",
+          "DSVSA efectuează inspecție obligatorie la fața locului — unitatea trebuie să fie complet amenajată și dotată la momentul controlului.",
+          "DSVSA Constanța: Str. Eliberării nr. 77 | dsvsa@dsvsa-constanta.ro | Tel: 0241.619.750 | constanta.dsvsa.ro"
+        ],
+        lege: "Regulamentul CE nr. 852/2004; Regulamentul CE nr. 853/2004; Ordinul ANSVSA nr. 111/2008; Ordinul ANSVSA nr. 96/2014 mod. Ordinul nr. 652/2025; OG nr. 42/2004; Legea nr. 150/2004"
+      }] : []),
+      {
+        id: isFoodCaen ? 5 : 4,
         titlu: "Verificare cerințe specifice domeniului de activitate",
         institutie: "Instituții specifice domeniului (DSP, DSVSA, ARR, ISC etc.)",
         institutie_url: "https://www.primaria-constanta.ro",
@@ -3609,5 +3851,4 @@ function estimateTotalDays(steps) {
 
 </script>
 </body>
-
 </html>
